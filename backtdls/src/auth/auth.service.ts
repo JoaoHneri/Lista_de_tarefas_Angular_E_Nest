@@ -21,12 +21,12 @@ export class AuthService {
     };
     const jwtToken = this.jwtService.sign(payload);
 
-    return{
+    return {
       id: user.id,
       name: user.name,
       email: user.email,
       access_token: jwtToken,
-    }
+    };
   }
 
   async validateUser(email: string, password: string) {
