@@ -2,13 +2,31 @@ import { Injectable } from '@nestjs/common';
 import { UserService } from 'src/user/user.service';
 import * as bcrypt from 'bcrypt';
 import { stringify } from 'querystring';
+import { User } from 'src/user/entities/user.entity';
+import { UserPayload } from './models/userPayload';
+import { JwtService } from '@nestjs/jwt';
+import { UserToken } from './models/UserToken';
 
 @Injectable()
 export class AuthService {
-  login() {
-    throw new Error('Method not implemented.');
+  constructor(
+    private readonly userService: UserService,
+    private readonly jwtService: JwtService,
+  ) {}
+
+  login(user: User): UserToken {
+    const payload: UserPayload = {
+      sub: user.id,
+      email: user.email,
+      name: user.name,
+    };
+    const jwtToken = this.jwtService.sign(payload);
+
+    return{
+      access_token: jwtToken,
+    }
   }
-  constructor(private readonly userService: UserService) {}
+
   async validateUser(email: string, password: string) {
     const user = await this.userService.findByEmail(email);
 
@@ -25,4 +43,3 @@ export class AuthService {
     throw new Error('Email ou senha incorretos.');
   }
 }
-
