@@ -65,7 +65,7 @@
 }
 
 .imageSpacement {
-    .imageSpacement {
+
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -73,7 +73,7 @@
         margin: 0; /* Adicionando margem zero */
         padding: 0; /* Adicionando preenchimento zero */
         box-sizing: border-box; /* Adicionando box-sizing para evitar surpresas */
-      }
+    
       
 }
 
@@ -81,6 +81,7 @@
 a {
   text-decoration: none;
   color: #ffffff;
+
 }
 
 .input-container {
@@ -112,7 +113,7 @@ a {
 .input-container input:valid ~ .label {
   top: -55px;
   font-size: 16px;
-  color: #333;
+  color: #ffffff;
 }
 
 .input-container input:focus {
@@ -125,7 +126,7 @@ a {
   left: 0;
   height: 2px;
   width: 100%;
-  background-color: #333;
+  background-color: #ffffff;
   transform: scaleX(0);
   transition: all 0.3s ease;
 }
