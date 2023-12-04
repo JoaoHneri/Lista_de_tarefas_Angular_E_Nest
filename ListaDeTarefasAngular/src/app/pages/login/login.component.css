@@ -6,7 +6,9 @@
     align-items: center;
     border: none; /* Remover a borda padrão */
     font-family: "Poppins", sans-serif;
-    background-image: url("../../../assets/images/loginBack.svg");
+    background-image: url("../../../assets/images/loginBack.svg") ;
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     margin: 0;
     padding: 0;
