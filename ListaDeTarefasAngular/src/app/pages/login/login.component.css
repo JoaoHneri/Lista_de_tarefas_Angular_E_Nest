@@ -1,21 +1,19 @@
 .loginSpacement {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none; /* Remover a borda padrão */
-    font-family: "Poppins", sans-serif;
-    background-image: url("../../../assets/images/loginBack.svg") ;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none; /* Remover a borda padrão */
+  font-family: "Poppins", sans-serif;
+  background-image: url("../../../assets/images/loginBack.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 .loginContainer {
   display: flex;
@@ -65,23 +63,19 @@
 }
 
 .imageSpacement {
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        margin: 0; /* Adicionando margem zero */
-        padding: 0; /* Adicionando preenchimento zero */
-        box-sizing: border-box; /* Adicionando box-sizing para evitar surpresas */
-    
-      
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 0; /* Adicionando margem zero */
+  padding: 0; /* Adicionando preenchimento zero */
+  box-sizing: border-box; /* Adicionando box-sizing para evitar surpresas */
 }
 
 .imageSpacement p,
 a {
   text-decoration: none;
   color: #ffffff;
-
 }
 
 .input-container {
@@ -98,6 +92,7 @@ a {
   padding: 5px 0;
   background-color: transparent;
   outline: none;
+  color: #fff;
 }
 
 .input-container .label {
@@ -118,6 +113,7 @@ a {
 
 .input-container input:focus {
   font-size: 15px;
+  color: #fff;
 }
 
 .input-container .underline {
