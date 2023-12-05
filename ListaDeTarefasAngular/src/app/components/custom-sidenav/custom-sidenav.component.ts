@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { MenuItem } from 'src/Model/MenuItem';
 import {MatListModule} from '@angular/material/list'
 import {MatIconModule} from '@angular/material/icon'
@@ -13,6 +13,9 @@ import { CommonModule } from '@angular/common';
 })
 
 export class CustomSidenavComponent {
+  @Input()
+  collapsed: boolean | undefined
+  profilePicSize = (()=> this.collapsed ? '32' : '100')
 
   menuItems = [
     { icon: 'dashboard', label: 'Dashboard', route: 'dashboard' },
