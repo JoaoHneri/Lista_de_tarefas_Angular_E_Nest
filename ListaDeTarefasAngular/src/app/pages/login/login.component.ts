@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { LoginService } from 'src/services/login.service';
 
 @Component({
@@ -8,7 +9,7 @@ import { LoginService } from 'src/services/login.service';
 })
 export class LoginComponent{
 
-  constructor(private  loginService: LoginService) { }
+  constructor(private  loginService: LoginService, private router: Router) { }
   
   @Input()
   email: string = "";
@@ -20,6 +21,7 @@ export class LoginComponent{
     if(this.email && this.password){
       this.loginService.login(this.email, this.password).subscribe(()=>{
         alert("Logado com sucesso");
+        this.router.navigate(['/']);
       }, (error)=>{
         alert("Erro ao efetuar login")
       })

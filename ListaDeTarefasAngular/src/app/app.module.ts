@@ -13,8 +13,9 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
-import {MatListModule} from '@angular/material/list'
-import {MatIconModule} from '@angular/material/icon'
+import { MatListModule } from '@angular/material/list';
+import { MatIconModule } from '@angular/material/icon';
+import { ContentComponent } from './pages/content/content.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import {MatIconModule} from '@angular/material/icon'
     HomeComponent,
     NavTollbarCComponent,
     CustomSidenavComponent,
+    ContentComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,7 +37,8 @@ import {MatIconModule} from '@angular/material/icon'
     MatButtonModule,
     MatIconModule,
     MatSidenavModule,
-    MatListModule, MatIconModule,
+    MatListModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

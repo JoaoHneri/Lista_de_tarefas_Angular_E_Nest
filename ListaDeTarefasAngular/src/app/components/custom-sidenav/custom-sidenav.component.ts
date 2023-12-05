@@ -13,9 +13,9 @@ export class CustomSidenavComponent {
 
   menuItems = [
     { icon: 'dashboard', label: 'Dashboard', route: 'dashboard' },
-    { icon: 'dashboard', label: 'Dashboard', route: 'dashboard' },
-    { icon: 'dashboard', label: 'Dashboard', route: 'dashboard' },
-    { icon: 'dashboard', label: 'Dashboard', route: 'dashboard' },
+    { icon: 'calendar_month', label: 'Calendário', route: 'Calendar' },
+    { icon: 'add_circle', label: 'Criar Tarefa', route: 'dashboard' },
+    { icon: 'edit', label: 'Editar Tarefa', route: 'dashboard' },
   ];
 
 }
