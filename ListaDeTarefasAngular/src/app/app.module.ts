@@ -9,14 +9,20 @@ import { HomeComponent } from './pages/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CustomSidenavComponent } from './components/custom-sidenav/custom-sidenav.component';
 import { NavTollbarCComponent } from './components/nav-tollbar-c/nav-tollbar-c.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import {MatListModule} from '@angular/material/list'
+import {MatIconModule} from '@angular/material/icon'
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    
     HomeComponent,
-    
+    NavTollbarCComponent,
+    CustomSidenavComponent,
   ],
   imports: [
     BrowserModule,
@@ -24,7 +30,12 @@ import { NavTollbarCComponent } from './components/nav-tollbar-c/nav-tollbar-c.c
     FormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    NavTollbarCComponent,CustomSidenavComponent,
+    MatToolbarModule,
+    MatSlideToggleModule,
+    MatButtonModule,
+    MatIconModule,
+    MatSidenavModule,
+    MatListModule, MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
