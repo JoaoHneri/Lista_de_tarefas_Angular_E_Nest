@@ -14,7 +14,9 @@ import { CustomSidenavComponent } from 'src/app/components/custom-sidenav/custom
   imports:[MatToolbarModule, MatSlideToggleModule,MatButtonModule, MatIconModule, MatSidenavModule, CustomSidenavComponent],
 })
 export class NavTollbarCComponent implements OnInit {
+  collapsed: boolean = false;
 
+  sidenavWidth = (()=> this.collapsed ? '65px': '250px');
   constructor() { }
 
   ngOnInit(): void {
