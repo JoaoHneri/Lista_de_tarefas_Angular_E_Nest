@@ -7,10 +7,11 @@
 </mat-toolbar>
 <mat-sidenav-container>
     <mat-sidenav opened mode="side" [style.width]="sidenavWidth()">
-        <app-custom-sidenav [collapsed]="collapsed"></app-custom-sidenav>
+        <app-custom-sidenav (menuItemSelected)="receiveDataFromChild($event)" [collapsed]="collapsed"></app-custom-sidenav >
+            <p>{{selectedComponent}}</p>
     </mat-sidenav>
     <mat-sidenav-content class="content" [style.margin-left]="sidenavWidth()">
-        <app-content></app-content>
+        <app-comp-dinamico [switchCondition]="selectChildComponent"></app-comp-dinamico>
     </mat-sidenav-content>
 </mat-sidenav-container>
 

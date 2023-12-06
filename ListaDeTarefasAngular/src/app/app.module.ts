@@ -16,6 +16,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import { ContentComponent } from './pages/content/content.component';
+import { CompDinamicoComponent } from './components/comp-dinamico/comp-dinamico.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import { ContentComponent } from './pages/content/content.component';
     HomeComponent,
     NavTollbarCComponent,
     CustomSidenavComponent,
-    ContentComponent,
+    ContentComponent, CompDinamicoComponent,
   ],
   imports: [
     BrowserModule,
