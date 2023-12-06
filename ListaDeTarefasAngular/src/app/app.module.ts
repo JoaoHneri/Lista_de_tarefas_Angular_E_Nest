@@ -17,6 +17,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import { ContentComponent } from './pages/content/content.component';
 import { CompDinamicoComponent } from './components/comp-dinamico/comp-dinamico.component';
+import { CalendarComponent } from './components/calendar/calendar.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,7 @@ import { CompDinamicoComponent } from './components/comp-dinamico/comp-dinamico.
     HomeComponent,
     NavTollbarCComponent,
     CustomSidenavComponent,
-    ContentComponent, CompDinamicoComponent,
+    ContentComponent,CalendarComponent, CompDinamicoComponent,
   ],
   imports: [
     BrowserModule,

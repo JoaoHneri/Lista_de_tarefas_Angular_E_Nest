@@ -34,14 +34,16 @@ export class CompDinamicoComponent implements OnInit, OnDestroy, OnChanges {
   private renderComponent(): void {
     let componentType: any;
 
-    // Aqui é onde você faz o switch para decidir qual componente renderizar
+
     switch (this.switchCondition) {
       case 'content':
         componentType = ContentComponent;
         break;
-
+        case 'calendar':
+          componentType = CalendarComponent;
+          break;
       default:
-        componentType = CalendarComponent;
+        componentType = ContentComponent;
         break;
     }
 
